@@ -1,7 +1,8 @@
 const test = 143
 const bis = 219
 
-console.log(test == bis)
+console.log(test === bis)
+console.log(test !== bis)
 console.log(test > bis)
 console.log(test < bis)
 console.log(test >= bis)
@@ -52,40 +53,16 @@ if (random == 6){
 let month = "January"
 
 switch (month) {
-	case "January":
+	case "January": case "February":
 		console.log("Winter")
 		break;
-	case "February":
-		console.log("Winter")
-		break;
-	case "March":
+	case "April": case "March": case "May":
 		console.log("spring")
 		break;
-	case "April":
-		console.log("spring")
-		break;
-	case "May":
-		console.log("spring")
-		break;
-	case "June":
+	case "June": case "July": case "August":
 		console.log("Summer")
 		break;
-	case "July":
-		console.log("Summer")
-		break;
-	case "August":
-		console.log("Summer")
-		break;
-  case "September":
-		console.log("Fall")
-		break;
-  case "October":
-		console.log("Fall")
-		break;
-  case "November":
-		console.log("Fall")
-		break;
-  case "December":
+  case "September": case "October": case "November": case "December":
 		console.log("Fall")
 		break;
 	default:
@@ -102,19 +79,20 @@ if ((roundedNumber - Math.floor(roundedNumber))*10 >= 5 ){
 }
 
 
-// let decimalPart = roundedNumber.toString().split(".")[1]
+let decimalPart = roundedNumber.toString().split(".")[1]
 
-// if(parseInt(decimalPart) >= 5){
-//   console.log(Math.ceil(roundedNumber))
-// }else{
-//   console.log(Math.floor(roundedNumber))
-// }
+if(parseInt(decimalPart) >= 5){
+  console.log(Math.ceil(roundedNumber))
+}else{
+  console.log(Math.floor(roundedNumber))
+}
 
 
-// substringStart = roundedNumber.toString().indexOf('.')
+const substringStart = roundedNumber.toString().indexOf('.')
+const position = roundedNumber.toString().substring(parseInt(substringStart+1))
 
-// if(roundedNumber.toString().substring(parseInt(substringStart+1))>=5){
-//   console.log(Math.ceil(roundedNumber))
-// }else{
-//   console.log(Math.floor(roundedNumber))
-// }
+if(position >=5){
+  console.log(Math.ceil(roundedNumber))
+}else{
+  console.log(Math.floor(roundedNumber))
+}
