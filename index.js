@@ -10,7 +10,7 @@ console.log(test <= bis)
 
 
 const limit = 50
-var score = 64
+let score = 64
 
 if (limit <= score){
   console.log("Ok good !")
@@ -49,7 +49,7 @@ if (random == 6){
 }
 
 
-var month = "January"
+let month = "January"
 
 switch (month) {
 	case "January":
@@ -93,11 +93,28 @@ switch (month) {
 }
 
 
-var roundedNumber = 3.3
-let decimalPart = roundedNumber.toString().split(".")[1]
+let roundedNumber = 3.6
 
-if(decimalPart >= 5){
+if (roundedNumber ){
   console.log(Math.ceil(roundedNumber))
 }else{
   console.log(Math.floor(roundedNumber))
 }
+
+
+// let decimalPart = roundedNumber.toString().split(".")[1]
+
+// if(decimalPart >= 5){
+//   console.log(Math.ceil(roundedNumber))
+// }else{
+//   console.log(Math.floor(roundedNumber))
+// }
+
+
+// substringStart = roundedNumber.toString().indexOf('.')
+
+// if(roundedNumber.toString().substring(parseInt(substringStart+1))>=5){
+//   console.log(Math.ceil(roundedNumber))
+// }else{
+//   console.log(Math.floor(roundedNumber))
+// }
