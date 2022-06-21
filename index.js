@@ -95,7 +95,7 @@ switch (month) {
 
 let roundedNumber = 3.6
 
-if (roundedNumber ){
+if ((roundedNumber - Math.floor(roundedNumber))*10 >= 5 ){
   console.log(Math.ceil(roundedNumber))
 }else{
   console.log(Math.floor(roundedNumber))
@@ -104,7 +104,7 @@ if (roundedNumber ){
 
 // let decimalPart = roundedNumber.toString().split(".")[1]
 
-// if(decimalPart >= 5){
+// if(parseInt(decimalPart) >= 5){
 //   console.log(Math.ceil(roundedNumber))
 // }else{
 //   console.log(Math.floor(roundedNumber))
